@@ -142,43 +142,128 @@
 
    			<h3>Skills</h3>
 
-			<ul class="skill-bars">
-				<li>
-					<strong>Collibra DQ &amp; DGC (Data Governance &amp; Quality)</strong>
-				</li>
-				<li>
-					<strong>Databricks &amp; SQL (Data Engineering)</strong>
-				</li>
-				<li>
-					<strong>Power BI &amp; DAX (Business Intelligence)</strong>
-				</li>
-				<li>
-					<strong>Python &amp; SQL (Programming)</strong>
-				</li>
-				<li>
-					<strong>SAP HANA</strong>
-				</li>
-				<li>
-					<strong>Informatica PowerCenter &amp; MDM</strong>
-				</li>
-				<li>
-					<strong>Git / GitHub</strong>
-				</li>
-				<li>
-					<strong>Data Modeling &amp; Metadata Management</strong>
-				</li>
-				<li>
-					<strong>KPI Reporting &amp; Violation Analysis</strong>
-				</li>
-				<li>
-					<strong>Relational Databases (RDBMS)</strong>
-				</li>
-			</ul> <!-- /skill-bars -->
+			<style>
+				.skills-grid { margin-top: 8px; }
+				.skill-category { margin-bottom: 18px; }
+				.skill-category-label {
+					font-size: 10px;
+					font-weight: 700;
+					letter-spacing: 0.12em;
+					text-transform: uppercase;
+					color: #999;
+					margin-bottom: 8px;
+					display: block;
+				}
+				.skill-tags {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 7px;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+				}
+				.skill-tags li {
+					display: inline-flex;
+					align-items: center;
+					padding: 5px 13px;
+					border-radius: 3px;
+					font-size: 12px;
+					font-weight: 600;
+					letter-spacing: 0.02em;
+					line-height: 1.4;
+					border: none;
+					margin: 0;
+				}
+				.skill-tags li::before { display: none; }
+				/* Category colour themes */
+				.skill-tags.governance li  { background: #1a1a2e; color: #a78bfa; border-left: 3px solid #7c3aed; }
+				.skill-tags.engineering li { background: #0f2027; color: #67e8f9; border-left: 3px solid #0891b2; }
+				.skill-tags.bi li          { background: #1a1200; color: #fbbf24; border-left: 3px solid #d97706; }
+				.skill-tags.programming li { background: #0f1f0f; color: #6ee7b7; border-left: 3px solid #059669; }
+				.skill-tags.tools li       { background: #1c1c1c; color: #d1d5db; border-left: 3px solid #6b7280; }
+				.lang-row {
+					display: flex;
+					gap: 10px;
+					flex-wrap: wrap;
+					margin-top: 6px;
+				}
+				.lang-badge {
+					background: #f3f4f6;
+					border-radius: 3px;
+					padding: 5px 12px;
+					font-size: 12px;
+					color: #374151;
+					font-weight: 600;
+				}
+				.lang-badge span {
+					font-weight: 400;
+					color: #6b7280;
+					margin-left: 4px;
+				}
+			</style>
 
-			<p style="margin-top:16px;">
-				<strong>Languages:</strong><br />
-				<b>English:</b> Fluent &nbsp;|&nbsp; <b>Telugu:</b> Native &nbsp;|&nbsp; <b>Hindi:</b> Basic
-			</p>
+			<div class="skills-grid">
+
+				<div class="skill-category">
+					<em class="skill-category-label">Data Governance &amp; Quality</em>
+					<ul class="skill-tags governance">
+						<li>Collibra DQ</li>
+						<li>Collibra DGC</li>
+						<li>Data Quality Rules</li>
+						<li>Violation Analysis</li>
+						<li>Metadata Management</li>
+					</ul>
+				</div>
+
+				<div class="skill-category">
+					<em class="skill-category-label">Data Engineering &amp; Analytics</em>
+					<ul class="skill-tags engineering">
+						<li>Databricks</li>
+						<li>SQL</li>
+						<li>RDBMS</li>
+						<li>Data Modeling</li>
+						<li>Curated Datasets</li>
+					</ul>
+				</div>
+
+				<div class="skill-category">
+					<em class="skill-category-label">Business Intelligence &amp; Visualization</em>
+					<ul class="skill-tags bi">
+						<li>Power BI</li>
+						<li>DAX (Basic)</li>
+						<li>KPI Reporting</li>
+						<li>DQ Dashboards</li>
+					</ul>
+				</div>
+
+				<div class="skill-category">
+					<em class="skill-category-label">Programming &amp; Scripting</em>
+					<ul class="skill-tags programming">
+						<li>Python</li>
+						<li>SQL</li>
+					</ul>
+				</div>
+
+				<div class="skill-category">
+					<em class="skill-category-label">Tools &amp; Platforms</em>
+					<ul class="skill-tags tools">
+						<li>SAP HANA</li>
+						<li>Informatica PowerCenter</li>
+						<li>Informatica MDM</li>
+						<li>Git / GitHub</li>
+					</ul>
+				</div>
+
+				<div class="skill-category">
+					<em class="skill-category-label">Languages</em>
+					<div class="lang-row">
+						<div class="lang-badge">English <span>Fluent</span></div>
+						<div class="lang-badge">Telugu <span>Native</span></div>
+						<div class="lang-badge">Hindi <span>Basic</span></div>
+					</div>
+				</div>
+
+			</div> <!-- /skills-grid -->
 
    		</div>
 
